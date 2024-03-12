@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<!-- Coding by CodingLab | www.codinglabweb.com  -->
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Brand Bros Website</title>
+
+        <!-- Swiper JS CSS-->
+        <link rel="stylesheet" href="css/swiper-bundle.min.css">
+
+        <!-- Scroll Reveal -->
+        <link rel="stylesheet" href="css/scrollreveal.min.js">
+
+        <!-- Boxicons -->
+        <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="css/style.css">
+
+        <!-- Contact us icons -->
+        <script src="https://kit.fontawesome.com/c32adfdcda.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+        <!-- Header -->
+        <header class="header">
+                <nav class="nav container flex">
+                        <a href="#" class="logo-content flex">
+                                <i class='bx bx-coffee logo-icon'></i>
+                                <span class="logo-text">Brand Bros</span>
+                        </a>
+
+                        <div class="menu-content">
+                                <ul class="menu-list flex">
+                                        <li><a href="#home" class="nav-link active-navlink">Home</a></li>
+                                        <li><a href="#about" class="nav-link">About</a></li>
+                                        <li><a href="#menu" class="nav-link">Know More</a></li>
+                                        <li><a href="#review" class="nav-link">Services</a></li>
+                                        <li><a href="#contactus" class="nav-link">Contact Us</a></li>
+                                        <!--        <li><a href=" " class="dropdown">Register Here</a></li>     -->
+                                        <div class="dropdown">
+                                                <button class="dropbtn"> Register Here </button>
+                                                <div class="dropdown-content">
+                                                        <b> <a href=" registrationbrand.html "> Brand </a> </b>
+                                                        <b> <a href=" registrationcreator.html "> Creator </a> </b>
+                                                </div>
+                                        </div>
+                                </ul>
+
+                                <div class="media-icons flex">
+                                        <a href="https://www.facebook.com"><i class='bx bxl-facebook'></i></a>
+                                        <a href="https://twitter.com/i/flow/login"><i class='bx bxl-twitter'></i></a>
+                                        <a href="https://www.instagram.com/accounts/login"><i
+                                                        class='bx bxl-instagram-alt'></i></a>
+                                        <a href="https://github.com/login"><i class='bx bxl-github'></i></a>
+                                        <a href="https://www.youtube.com/login"><i class='bx bxl-youtube'></i></a>
+                                </div>
+
+                                <i class='bx bx-x navClose-btn'></i>
+                        </div>
+
+                        <div class="contact-content flex">
+                                <i class=' '></i>
+                                <span class="phone-number"> </span>
+                        </div>
+
+                        <i class='bx bx-menu navOpen-btn'></i>
+                </nav>
+
+        </header>
+
+        <!-- Home Section -->
+        <main>
+                <section class="home" id="home">
+                        <div class="home-content">
+                                <div class="swiper mySwiper">
+                                        <div class="swiper-wrapper">
+                                                <div class="swiper-slide">
+                                                        <img src="2.jpg" alt="" class="home-img">
+                                                        <div class="home-details">
+                                                                <div class="home-text">
+                                                                        <h2 class="homeSubtitle"> </h2>
+                                                                        <h4 class="homeTitle"> </h4>
+
+                                                                </div>
+                                                                
+                                                                <div class=" button-class">
+
+                                                                        <button class="btn-open-popup"
+                                                                                onclick="togglePopup()">
+                                                                                <b> I'm Creator </b>
+                                                                        </button> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+
+                                                                        <div id="popupOverlay"
+                                                                                class="overlay-container">
+                                                                                <div class="popup-box">
+                                                                                        <h2 style="color: black ;">Login
+                                                                                                Creator
+                                                                                        </h2> <br>
+                                                                                        <form class="form-container">
+                                                                                                <label class="form-label"
+                                                                                                        for="name">
+                                                                                                        Username*</label>
+                                                                                                <input class="form-input"
+                                                                                                        type="text"
+                                                                                                        placeholder="  "
+                                                                                                        id="name"
+                                                                                                        name="username"
+                                                                                                        required>
+
+
+                                                                                                <label class="form-label"
+                                                                                                        for="email">Password*</label>
+                                                                                                <input class="form-input"
+                                                                                                        type="email"
+                                                                                                        placeholder="  "
+                                                                                                        id="email"
+                                                                                                        name="password"
+                                                                                                        required>
+
+                                                                                                <button class="btn-submit"
+                                                                                                        type="submit">
+                                                                                                        Submit
+                                                                                                </button> <br>
+
+
+                                                                                                <a
+                                                                                                        href=" registrationcreator.html ">
+                                                                                                        Regsiter Here!
+                                                                                                </a>
+
+
+                                                                                        </form>
+
+                                                                                        <button class="btn-close-popup"
+                                                                                                onclick="togglePopup()">
+                                                                                                Close
+                                                                                        </button>
+                                                                                </div>
+                                                                        </div>
+
+
+                                                                        <button class="btn-open-popup"
+                                                                                onclick="togglePopup1()">
+                                                                                <b> I'm Brand </b>
+                                                                        </button>
+
+                                                                        <div id="popupOverlay1"
+                                                                                class="overlay-container">
+                                                                                <div class="popup-box">
+                                                                                        <h2 style="color: black ;">Login
+                                                                                                Brand
+                                                                                        </h2> <br>
+                                                                                        <form class="form-container">
+                                                                                                <label class="form-label"
+                                                                                                        for="name">
+                                                                                                        Username*</label>
+                                                                                                <input class="form-input"
+                                                                                                        type="text"
+                                                                                                        placeholder="  "
+                                                                                                        id="name"
+                                                                                                        name="username"
+                                                                                                        required>
+
+
+                                                                                                <label class="form-label"
+                                                                                                        for="email">Password*</label>
+                                                                                                <input class="form-input"
+                                                                                                        type="email"
+                                                                                                        placeholder="  "
+                                                                                                        id="email"
+                                                                                                        name="password"
+                                                                                                        required>
+
+                                                                                                <button class="btn-submit"
+                                                                                                        type="submit">
+                                                                                                        Submit
+                                                                                                </button> <br>
+
+                                                                                                <a
+                                                                                                        href=" registrationbrand.html ">
+                                                                                                        Regsiter Here!
+                                                                                                </a>
+
+
+                                                                                        </form>
+
+                                                                                        <button class="btn-close-popup"
+                                                                                                onclick="togglePopup1()">
+                                                                                                Close
+                                                                                        </button>
+                                                                                </div>
+                                                                        </div>
+
+                                                                </div>
+                                                        </div>
+                                                </div>
+
+
+                                                <div class="swiper-slide">
+                                                        <img src="13.jpg" alt="" class="home-img">
+
+                                                        <div class="home-details">
+
+                                                                <div class="home-text">
+                                                                        <h4 class="homeSubtitle"> </h4>
+                                                                        <h2 class="homeTitle"> </h2>
+                                                                </div>
+
+                                                                <!--        <div class=" button-class">
+                                                                        <button class="button">For Creator</button>
+                                                                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <button
+                                                                                class="button">For Brand</button>       
+                                                                </div>  -->
+
+                                                        </div>
+                                                </div>
+
+                                        <div class="swiper-slide">
+                                                <img src="32.jpg" alt="" class="home-img">
+                                                <div class="home-details">
+                                                        <div class="home-text">
+                                                                <h4 class="homeSubtitle"> </h4>
+                                                                <h2 class="homeTitle"> </h2>
+                                                        </div>
+
+                                                        <!--        <div class=" button-class">
+                                                                        <button class="button">For Creator</button>
+                                                                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <button
+                                                                                class="button">For Brand</button>
+                                                                </div>  -->
+                                                </div>
+                                        </div>
+                                </div>
+
+                                <div class="swiper-button-next swiper-navBtn"></div>
+                                <div class="swiper-button-prev swiper-navBtn"></div>
+                                <div class="swiper-pagination"></div>
+                        </div>
+                        </div>
+                </section>
+
+
+                <!-- About Section upside video -->
+                <section class="section about" id="about">
+                        <div class="about-content container">
+                                <div class="about-imageContent">
+                                        <img src="1.jpg" alt="" class="about-img">
+
+                                        <div class="aboutImg-textBox">
+                                                <i class='bx bx-heart heart-icon flex'></i>
+                                                <p class="content-description">The most powerful element in advertising
+                                                        is the truth</p>
+                                        </div>
+                                </div>
+
+                                <div class="about-details">
+                                        <div class="about-text">
+                                                <h4 class="content-subtitle"><i>Our Content</i></h4>
+                                                <h2 class="content-title"> Good content isn’t about good storytelling.
+                                                        It’s about telling a true story well and Modernity! </h2> <br>
+                                                <p class="content-description">Brand Bros is a leading Influencer
+                                                        Marketing Agency in India that connects brands with their
+                                                        audiences and customers by conveying the brand’s story through
+                                                        the power of influencer marketing.</p>
+
+                                                <ul class="about-lists flex">
+                                                        <li class="about-list">Content</li>
+                                                        <li class="about-list dot">.</li>
+                                                        <li class="about-list">Creation</li>
+                                                        <li class="about-list dot">.</li>
+                                                        <li class="about-list">Brand</li>
+                                                </ul>
+                                        </div>
+
+                                        <div class="about-buttons flex">
+                                                <button class="button">About Us</button>
+                                                <a href="#" class="about-link flex">
+                                                        <span class="link-text">see more</span>
+                                                        <i class='bx bx-right-arrow-alt about-arrowIcon'></i>
+                                                </a>
+                                        </div>
+                                </div>
+
+                        </div>
+                </section>
+
+                <!-- 4 videos Section -->
+                <section class="videoss" id="video">
+                        <div class=" video-class">
+                                <video width="500px" height=300px" class="elementor-video"
+                                        src="https://res.cloudinary.com/dy8ciqewi/video/upload/v1707907357/Comp-1_1-1_1888093578.mp4?_i=AA"
+                                        autoplay="" loop="" muted="muted" playsinline=""
+                                        controlslist="nodownload"></video>
+                                <video width="500px" height=300px" class="elementor-video"
+                                        src="https://res.cloudinary.com/dy8ciqewi/video/upload/v1707907357/Comp-1_1-1_1888093578.mp4?_i=AA"
+                                        autoplay="" loop="" muted="muted" playsinline=""
+                                        controlslist="nodownload"></video>
+                                <video width="500px" height=300px" class="elementor-video"
+                                        src="https://res.cloudinary.com/dy8ciqewi/video/upload/v1707907357/Comp-1_1-1_1888093578.mp4?_i=AA"
+                                        autoplay="" loop="" muted="muted" playsinline=""
+                                        controlslist="nodownload"></video>
+
+                        </div>
+                </section><br><br>
+
+
+                <!-- Cards Section -->
+                <section class="section menu" id="menu">
+
+                        <h2> <i>
+                                        <center> Why Choose Brand Bros </center>
+                                </i> </h2>
+
+                        <ul class="cards">
+                                <li>
+                                        <a href="" class="card">
+                                                <img src="24.jpg" class="card__image" alt="" />
+                                                <div class="card__overlay">
+                                                        <div class="card__header">
+                                                                <svg class="card__arc"
+                                                                        xmlns="http://www.w3.org/2000/svg">
+                                                                        <path />
+                                                                </svg>
+                                                                <img class="card__thumb"
+                                                                        src="https://i.imgur.com/7D7I6dI.png" alt="" />
+                                                                <div class="card__header-text">
+                                                                        <h3 class="card__title">Youtube Influencer
+                                                                                Marketing</h3>
+                                                                </div>
+                                                        </div>
+                                                        <p class="card__description">With more than 2.1 billion users on
+                                                                YouTube and multiple video formats, it is most likely to
+                                                                become a leading video consumption platform by 2025 and
+                                                                offers brands more opportunities for integration.</p>
+                                                </div>
+                                        </a>
+                                </li>
+                                <li>
+                                        <a href="" class="card">
+                                                <img src="25.jpg" class="card__image" alt="" />
+                                                <div class="card__overlay">
+                                                        <div class="card__header">
+                                                                <svg class="card__arc"
+                                                                        xmlns="http://www.w3.org/2000/svg">
+                                                                        <path />
+                                                                </svg>
+                                                                <img class="card__thumb"
+                                                                        src="https://i.imgur.com/sjLMNDM.png" alt="" />
+                                                                <div class="card__header-text">
+                                                                        <h3 class="card__title">Facebook Influencer
+                                                                                Marketing</h3>
+
+                                                                </div>
+                                                        </div>
+                                                        <p class="card__description">Statista ranked Instagram as
+                                                                India's most popular platform for influencer marketing
+                                                                in 2021, with billions of people creating highly
+                                                                engaging content on the platform to reach a large
+                                                                audience.</p>
+                                                </div>
+                                        </a>
+                                </li>
+                                <li>
+                                        <a href="" class="card">
+                                                <img src="24.jpg" class="card__image" alt="" />
+                                                <div class="card__overlay">
+                                                        <div class="card__header">
+                                                                <svg class="card__arc"
+                                                                        xmlns="http://www.w3.org/2000/svg">
+                                                                        <path />
+                                                                </svg>
+                                                                <img class="card__thumb"
+                                                                        src="https://i.imgur.com/7D7I6dI.png" alt="" />
+                                                                <div class="card__header-text">
+                                                                        <h3 class="card__title"> Instagram Influencer
+                                                                                Marketing
+                                                                        </h3>
+
+                                                                </div>
+                                                        </div>
+                                                        <p class="card__description">In India, more than half of
+                                                                internet users access social media content in their
+                                                                native languages. To appeal to vernacular languages and
+                                                                broaden their brand reach, brands have begun to invest
+                                                                in regional Influencers.</p>
+                                                </div>
+                                        </a>
+                                </li>
+
+                        </ul>
+
+
+                </section>
+
+
+                <!-- Brand Section -->
+                <section class="section brand" id="slider">
+
+                        <div class="brand-container container">
+                                <h4 class="section-subtitle"><i> Our Trusted Brands </i></h4>
+                                <div class="brand-images">
+                                        <div class="brand-image">
+                                                <img src="20.jpg" alt="" class="brand-img">
+                                        </div>
+                                        <div class="brand-image">
+                                                <img src="15.jpg" alt="" class="brand-img">
+                                        </div>
+                                        <div class="brand-image">
+                                                <img src="images/brandImg3.png" alt="" class="brand-img">
+                                        </div>
+                                        <div class="brand-image">
+                                                <img src="16.jpg" alt="" class="brand-img">
+                                        </div>
+                                        <div class="brand-image">
+                                                <img src="17.jpg" alt="" class="brand-img">
+                                        </div>
+                                </div>
+                        </div>
+                </section> <br>
+
+
+                <!-- Creator scroll Section -->
+                <h4 class="section-subtitle"><i> Our Celebrity Partners </i></h4> <br>
+                <section class="scrollright" id="scroll">
+
+                        <div class="scroll-container">
+                                <img src="33.jpg" alt="Cinque Terre">
+
+
+                        </div>
+                        <div class="scroll1-container">
+
+                                <img src="36.jpg" alt="Cinque Terre">
+
+                        </div>
+
+                        <div class="scroll2-container">
+                                <img src="37.jpg" alt="Cinque Terre">
+
+                        </div>
+                        <div class="scroll3-container">
+                                <img src="39.jpg" alt="Cinque Terre">
+
+                        </div>
+                </section>
+
+                <!-- Reviews Section -->
+                <section class="section review" id="review">
+                        <div class="review-container container">
+                                <div class="review-text">
+                                        <h4 class="section-subtitle"><i>Reviews</i></h4>
+                                        <h2 class="section-title">What Clients Says</h2>
+                                        <p class="section-description">Some reviews that customer said about our
+                                                website! </p>
+                                </div>
+
+                                <div class="tesitmonial swiper mySwiper">
+                                        <div class="swiper-wrapper">
+                                                <div class="testi-content swiper-slide flex">
+                                                        <img src="19.jpg" alt="" class="review-img">
+                                                        <p class="review-quote">I had Great experience and will
+                                                                like to
+                                                                continue to work with you!</p>
+                                                        <i class='bx bxs-quote-alt-left quote-icon'></i>
+
+                                                        <div class="testi-personDetails flex">
+                                                                <span class="name">Carry Minati </span>
+                                                                <span class="job">Content Creator</span>
+                                                        </div>
+                                                </div>
+                                                <div class="testi-content swiper-slide flex">
+                                                        <img src="21.jpg" alt="" class="review-img">
+                                                        <p class="review-quote">I had Great experience and will
+                                                                like to
+                                                                continue to work with you!</p>
+                                                        <i class='bx bxs-quote-alt-left quote-icon'></i>
+
+                                                        <div class="testi-personDetails flex">
+                                                                <span class="name"> Bhuvan Bam</span>
+                                                                <span class="job">Youtuber</span>
+                                                        </div>
+                                                </div>
+                                                <div class="testi-content swiper-slide flex">
+                                                        <img src="29.jpg" alt="" class="review-img">
+                                                        <p class="review-quote">I had Great experience and will
+                                                                like to
+                                                                continue to work with you!</p>
+                                                        <i class='bx bxs-quote-alt-left quote-icon'></i>
+
+                                                        <div class="testi-personDetails flex">
+                                                                <span class="name">Babu Bhaiyya</span>
+                                                                <span class="job">Komedy</span>
+                                                        </div>
+                                                </div>
+
+                                                <div class="testi-content swiper-slide flex">
+                                                        <img src="22.jpg" alt="" class="review-img">
+                                                        <p class="review-quote">I had Great experience and will
+                                                                like to
+                                                                continue to work with you!</p>
+                                                        <i class='bx bxs-quote-alt-left quote-icon'></i>
+
+                                                        <div class="testi-personDetails flex">
+                                                                <span class="name">Tony Stark</span>
+                                                                <span class="job">Iron Man</span>
+                                                        </div>
+                                                </div>
+
+                                                <div class="testi-content swiper-slide flex">
+                                                        <img src="27.jpg" alt="" class="review-img">
+                                                        <p class="review-quote">I had Great experience and will
+                                                                like to
+                                                                continue to work with you!</p>
+                                                        <i class='bx bxs-quote-alt-left quote-icon'></i>
+
+                                                        <div class="testi-personDetails flex">
+                                                                <span class="name">Amitabh Bachchan</span>
+                                                                <span class="job">Actor</span>
+                                                        </div>
+                                                </div>
+                                        </div>
+                                        <div class="swiper-button-next swiper-navBtn"></div>
+                                        <div class="swiper-button-prev swiper-navBtn"></div>
+                                        <div class="swiper-pagination"></div>
+                                </div>
+                        </div>
+                </section>
+
+                <!-- Contact Us Section -->
+
+                <section class="contactus" id="contactus">
+
+                        <div class="section-header">
+                                <div class="container">
+                                        <h2>Contact Us</h2>
+                                        <p>Give us a call or drop by anytime, we endeavour to answer all
+                                                enquiries
+                                                within 24 hours on business days.
+                                                We will be happy to answer your questions.</p>
+                                </div>
+                        </div>
+
+                        <div class="container">
+                                <div class="row">
+
+                                        <div class="contact-info">
+                                                <div class="contact-info-item">
+                                                        <div class="contact-info-icon">
+                                                                <i class="fas fa-home"></i>
+                                                        </div>
+
+                                                        <div class="contact-info-content">
+                                                                <h4>Address</h4>
+                                                                <p>Narayan Peth Badshah Boys,Pune-411041</p>
+                                                        </div>
+                                                </div>
+
+                                                <div class="contact-info-item">
+                                                        <div class="contact-info-icon">
+                                                                <i class="fas fa-phone"></i>
+                                                        </div>
+
+                                                        <div class="contact-info-content">
+                                                                <h4>Phone</h4>
+                                                                <p>8551069413</p>
+                                                        </div>
+                                                </div>
+
+                                                <div class="contact-info-item">
+                                                        <div class="contact-info-icon">
+                                                                <i class="fas fa-envelope"></i>
+                                                        </div>
+
+                                                        <div class="contact-info-content">
+                                                                <h4>Email</h4>
+                                                                <p>pranavgare123@gmail.com</p>
+                                                        </div>
+                                                </div>
+                                        </div>
+
+                                        <div class="contact-form">
+                                                <form action="" id="contact-form">
+                                                        <h2>Send Message</h2>
+                                                        <div class="input-box">
+                                                                <input type="text" required="true" name="">
+                                                                <span>Full Name</span>
+                                                        </div>
+
+                                                        <div class="input-box">
+                                                                <input type="email" required="true" name="">
+                                                                <span>Email</span>
+                                                        </div>
+
+                                                        <div class="input-box">
+                                                                <textarea required="true" name=""></textarea>
+                                                                <span>Type your Message...</span>
+                                                        </div>
+
+                                                        <div class="input-box">
+                                                                <input type="submit" value="Send" name="">
+                                                        </div>
+                                                </form>
+                                        </div>
+
+                                </div>
+                        </div>
+                </section>
+
+
+                <br>
+
+                <!-- Footer Section -->
+                <footer class="section footer">
+                        <div class="footer-container container">
+                                <div class="footer-content">
+                                        <a href="#" class="logo-content flex">
+                                                <i class='bx bx-coffee logo-icon'></i>
+                                                <span class="logo-text">Brand Bros</span>
+                                        </a>
+
+                                        <p class="content-description">One-stop for all kind of influencer
+                                                marketing
+                                                services - #Brand Bros”</p>
+
+                                        <div class="footer-location flex">
+                                                <i class='bx bx-map map-icon'></i>
+
+                                                <div class="location-text">
+                                                        Narayan Peth, Pune-411041
+                                                </div>
+                                        </div>
+                                </div>
+
+                                <div class="footer-linkContent">
+                                        <ul class="footer-links">
+                                                <h4 class="footerLinks-title">Services</h4>
+
+                                                <li><a href="#" class="footer-link">Instagram Influencer
+                                                                Marketing</a>
+                                                </li>
+                                                <li><a href="#" class="footer-link">YouTube Influencer
+                                                                Marketing</a>
+                                                </li>
+                                                <li><a href="#" class="footer-link">Twitter Influencer
+                                                                Marketing</a>
+                                                </li>
+                                                <li><a href="#" class="footer-link">Brand Placement</a></li>
+                                        </ul>
+                                        <ul class="footer-links" id="footer1">
+                                                <h4 class="footerLinks-title">Contact Us</h4>
+
+                                                <li><a href="#" class="footer-link">Narayan Peth,Pune-411041</a>
+                                                </li>
+                                                <li><a href="#" class="footer-link">pranavgare123@gmail.com</a>
+                                                </li>
+                                                <li><a href="#" class="footer-link">8551069413</a></li>
+                                        </ul>
+                                        <ul class="footer-links">
+                                                <h4 class="footerLinks-title">Support</h4>
+
+                                                <li><a href="#" class="footer-link">About Us</a></li>
+                                                <li><a href="#" class="footer-link">FAQs</a></li>
+                                                <li><a href="#" class="footer-link">Private Policy</a></li>
+                                                <li><a href="#" class="footer-link">Help Us</a></li>
+                                        </ul>
+                                </div>
+                        </div>
+                        <div class="footer-copyRight">&#169; Brand Bros. All rigths reserved</div>
+                </footer>
+
+                <!-- Scroll Up -->
+                <a href="#home" class="scrollUp-btn flex">
+                        <i class='bx bx-up-arrow-alt scrollUp-icon'></i>
+                </a>
+
+        </main>
+
+        <!-- Swiper JS -->
+        <script src="js/swiper-bundle.min.js"></script>
+
+        <!-- Scroll Reveal -->
+        <script src="js/scrollreveal.js"></script>
+
+        <!-- JavaScript -->
+        <script src="js/script.js"></script>
+
+        <script>
+                function togglePopup() {
+                        const overlay = document.getElementById('popupOverlay');
+                        overlay.classList.toggle('show');
+                } 
+        </script>
+
+        <script>
+                function togglePopup1() {
+                        const overlay = document.getElementById('popupOverlay1');
+                        overlay.classList.toggle('show');
+                } 
+        </script>
+
+
+</body>
+
+</html>

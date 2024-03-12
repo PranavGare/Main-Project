@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title> Filteration Page Brand </title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+  <!-- partial:index.partial.html -->
+  <button class="icon-button e-dark-mode-button u-animation-click" id="darkMode" aria-label="Dark Mode"><span
+      class="icon" aria-hidden="true/false">🌜</span></button>
+      
+  <div class="common-structure">
+    <header class="main-header u-flex">
+      <div class="start u-flex">
+        <a class="logo"> B </a>
+        <div class="search-box-wrapper">
+          <input type="search" class="search-box" placeholder="Search Here ">
+          <span class="icon-search" aria-label="hidden"> 🔎 </span>
+        </div>
+      </div>
+      <nav class="main-nav">
+        <ul class="main-nav-list u-flex">
+          <li class="main-nav-item u-only-wide"><a aria-label="Home" class="main-nav-button alt-text is-selected"><span
+                class="icon" aria-hidden="true"> 🏠 </span></a></li> &nbsp&nbsp&nbsp&nbsp&nbsp
+          <li class="main-nav-item u-only-small"><button aria-label="Menu" class="main-nav-button u-animation-click"
+              id="menuButton"><span class="icon icon-hamburger" aria-hidden="true"></span></button></li>
+        </ul>
+      </nav>
+      <div class="end"></div>
+    </header>
+    <nav class="user-nav">
+      <ul class="user-nav-list u-flex">
+        <li class="user-nav-item">
+          <a class="user">
+            <img class="user-image" src="b5 copy.jpg" height="28" width="28" alt="">
+            <span class="user-name"> Friends & Flea </span>
+          </a>
+        </li>
+        <li class="user-nav-item">
+          <button class="icon-button alt-text" aria-label="Notifications"><span class="icon"
+              aria-hidden="true">🔔</span></button> &nbsp&nbsp&nbsp
+          <button class="icon-button alt-text" aria-label="Logout"><span class="icon"
+              aria-hidden="true">🔚</span></button>&nbsp&nbsp&nbsp
+          <button class="icon-button alt-text" aria-label="History"><span class="icon"
+              aria-hidden="true">♻️</span></button>
+        </li>
+
+      </ul>
+    </nav>
+    <aside class="side-a">
+      <section class="common-section">
+        <h2 class="section-title u-hide">User Navigation</h2>
+        <ul class="common-list">
+          <li class="common-list-item">
+            <a href="brandprofile5.html" target="_blank" class="common-list-button">
+              <span class="icon">
+                <img class="user-image" src="b5 copy.jpg" height="36" width="36" alt="">
+              </span>
+              <span class="text"> Friends & Flea </span>
+            </a>
+          </li>
+
+          &nbsp&nbsp
+          <span class="icon" aria-hidden="true"> 🔽 </span>
+
+          <button id="filter-button" class="button"> Filter </button>
+          <div id="filter-container" class="filters">
+            <ul class="filters__list">
+              <li>
+                <input id="f1" type="checkbox" />
+                <label for="f1">Category </label> &nbsp&nbsp
+                <select id="category">
+                  <option value="volvo">Comedy</option>
+                  <option value="saab">Gaming</option>
+                  <option value="opel">Food</option>
+                  <option value="audi">Vlogs</option>
+                  <option value="audi">Tech</option>
+                </select> 
+              </li>
+              <li>
+                <input id="f2" type="checkbox" />
+                <label for="f2">City</label>  &nbsp&nbsp
+                <select id="city">
+                  <option value="volvo">Pune</option>
+                  <option value="saab">Mumbai</option>
+                  <option value="opel">Nashik</option>
+                  <option value="audi">Satara</option>
+                  <option value="audi">Nagpur</option>
+                </select>  
+              </li>
+              <li>
+                <input id="f3" type="checkbox" />
+                <label for="f3">Followers</label> &nbsp&nbsp
+                <select id="followers">
+                  <option value="volvo">0-10K</option>
+                  <option value="saab">10-20K</option>
+                  <option value="opel">20-50K</option>
+                  <option value="audi">50-100K</option>
+                  <option value="audi">Above 100K</option>
+                </select> 
+              </li>
+              <li>
+                <input id="f4" type="checkbox" />
+                <label for="f4">Platform</label>  &nbsp&nbsp
+                <select id="platform">
+                  <option value="volvo">Instagram</option>
+                  <option value="saab">Youtube</option>
+                </select>   
+              </li>
+            </ul>
+          </div>
+
+        </ul>
+      </section>
+
+    </aside>
+    <main class="main-feed">
+      <ul class="main-feed-list">
+        <li class="main-feed-item">
+          <article class="common-post">
+            <header class="common-post-header u-flex">
+              <img src="1 copy.jpg" class="user-image" width="40" height="40" alt="">
+              <div class="common-post-info">
+                <div class="user-and-group u-flex">
+                  <a href="profile1.html" target="_blank">Kallakaarr</a>
+                  <span class="icon icon-arrow-block-end"></span>
+                </div>
+                <div class="time-and-privacy"><time datetime="">October 14 at 1:51 PM</time><span
+                    class="icon icon-privacy">🌎</span></div>
+              </div>
+              <button class="icon-button-2 u-margin-inline-start" aria-label=" "> <input type="checkbox"
+                  class="checkboxedit" unchecked="unchecked">
+              </button>
+            </header>
+            <div class="common-post-content common-content">
+              <p>
+                <b>Muskuraiyee Aap Kallakaarr Pe Hai!</b> <br> Name: Rajas Shirode <br> Age: 22 <br> Experience: 3yrs
+                <br> Category: Funny/Entertainment
+              </p>
+            </div> <br>
+
+            <button class="confirm" type="submit">
+              CONFIRM
+            </button>
+
+          </article>
+        </li>
+        <li class="main-feed-item">
+          <article class="common-post">
+            <header class="common-post-header u-flex">
+              <img src="2 copy.jpg" class="user-image" width="40" height="40" alt="">
+              <div class="common-post-info">
+                <div class="user-and-group u-flex">
+                  <a href="profile2.html" target="_blank">Pashya Does</a>
+                  <span class="icon icon-arrow-block-end"></span>
+                </div>
+                <div class="time-and-privacy"><time datetime="">August 24 at 7:21 PM</time><span
+                    class="icon icon-privacy">🌎</span></div>
+              </div>
+              <button class="icon-button-2 u-margin-inline-start" aria-label=" "> <input type="checkbox"
+                  class="checkboxedit" unchecked="unchecked">
+              </button>
+            </header>
+            <div class="common-post-content common-content">
+              <p>
+                <b>Artist hu Vaii</b> <br> Name: Prasanna Indrol <br> Age: 21 <br> Experience: 2yrs <br> Category:
+                Funny/Entertainment
+              </p>
+            </div> <br>
+
+            <button class="confirm" type="submit">
+              CONFIRM
+            </button>
+
+          </article>
+        </li>
+        <li class="main-feed-item">
+          <article class="common-post">
+            <header class="common-post-header u-flex">
+              <img src="3 copy.jpg" class="user-image" width="40" height="40" alt="">
+              <div class="common-post-info">
+                <div class="user-and-group u-flex">
+                  <a href="profile3.html" target="_blank"> Beefikra </a>
+                  <span class="icon icon-arrow-block-end"></span>
+                </div>
+                <div class="time-and-privacy"><time datetime="">July 29 at 10:21 PM</time><span
+                    class="icon icon-privacy">🌎</span></div>
+              </div>
+              <button class="icon-button-2 u-margin-inline-start" aria-label=" "> <input type="checkbox"
+                  class="checkboxedit" unchecked="unchecked">
+              </button>
+            </header>
+            <div class="common-post-content common-content">
+              <p>
+                <b>Professional Video Shoots</b> <br> Name: Mohit Chavan <br> Age: 25 <br> Experience: 5yrs <br>
+                Category:
+                Aesthetic/Drone Shoot
+              </p>
+            </div> <br>
+
+            <button class="confirm" type="submit">
+              CONFIRM
+            </button>
+
+          </article>
+        </li>
+        <li class="main-feed-item">
+          <article class="common-post">
+            <header class="common-post-header u-flex">
+              <img src="4 copy.jpg" class="user-image" width="40" height="40" alt="">
+              <div class="common-post-info">
+                <div class="user-and-group u-flex">
+                  <a href="profile4.html" target="_blank"> Kon Gabbar </a>
+                  <span class="icon icon-arrow-block-end"></span>
+                </div>
+                <div class="time-and-privacy"><time datetime="">June 14 at 1:51 PM</time><span
+                    class="icon icon-privacy">🌎</span></div>
+              </div>
+              <button class="icon-button-2 u-margin-inline-start" aria-label=" "> <input type="checkbox"
+                  class="checkboxedit" unchecked="unchecked">
+              </button>
+            </header>
+            <div class="common-post-content common-content">
+              <p>
+                <b> Kahani Puri Filme Hai </b> <br> Name: Pratik Jadhav <br> Age: 24 <br> Experience: 4yrs <br>
+                Category:
+                Voice Over/Entertainment
+              </p>
+            </div> <br>
+
+            <button class="confirm" type="submit">
+              CONFIRM
+            </button>
+
+          </article>
+        </li>
+
+        <li class="main-feed-item">
+          <article class="common-post">
+            <header class="common-post-header u-flex">
+              <img src="5 copy.jpg" class="user-image" width="40" height="40" alt="">
+              <div class="common-post-info">
+                <div class="user-and-group u-flex">
+                  <a href="profile5.html" target="_blank"> Urban Hindra </a>
+                  <span class="icon icon-arrow-block-end"></span>
+
+                </div>
+                <div class="time-and-privacy"><time datetime="">June 3 at 12:26 PM</time><span
+                    class="icon icon-privacy">🌎</span></div>
+              </div>
+              <button class="icon-button-2 u-margin-inline-start" aria-label=" "> <input type="checkbox"
+                  class="checkboxedit" unchecked="unchecked">
+              </button>
+            </header>
+            <div class="common-post-content common-content">
+              <p>
+                <b>Video Creator!</b> <br> Name: Yugal Bhendarkar <br> Age: 22 <br> Experience: 1yr <br> Category:
+                Aesthetic Shoots
+              </p>
+            </div> <br>
+
+            <button class="confirm" type="submit">
+              CONFIRM
+            </button>
+
+          </article>
+        </li>
+        <li class="main-feed-item">
+          <article class="common-post">
+            <header class="common-post-header u-flex">
+              <img src="6 copy.jpg" class="user-image" width="40" height="40" alt="">
+              <div class="common-post-info">
+                <div class="user-and-group u-flex">
+                  <a href="profile6.html" target="_blank"> Pranav_13</a>
+                  <span class="icon icon-arrow-block-end"></span>
+                </div>
+                <div class="time-and-privacy"><time datetime="">May 18 at 5:58 PM</time><span
+                    class="icon icon-privacy">🌎</span></div>
+              </div>
+              <button class="icon-button-2 u-margin-inline-start" aria-label=" "> <input type="checkbox"
+                  class="checkboxedit" unchecked="unchecked">
+              </button>
+            </header>
+            <div class="common-post-content common-content">
+              <p>
+                <b>Growing & Learning :) </b> <br> Name: Pranav Gare <br> Age: 22 <br> Experience: 1yr <br> Category:
+                Aesthetic/Entertainment
+              </p>
+            </div> <br>
+
+            <button class="confirm" type="submit">
+              CONFIRM
+            </button>
+
+          </article>
+        </li>
+
+      </ul>
+    </main>
+    <aside class="side-b">
+      <section class="common-section">
+        <h2 class="section-title"> Notification </h2>
+        <ul class="common-list">
+          <li class="common-list-item">
+            <a href="http://bit.ly/2Nd05lW" target="_blank" class="common-list-button is-ads">
+              <div class="image"><img src="https://bit.ly/3cY5ncE" width="115" alt=""></div>
+              <div class="text">
+                <h4 class="ads-title"> No Notification Yet!</h4>
+                <p class="ads-url">BrandBros.com</p>
+              </div>
+            </a>
+          </li>
+          <li class="common-list-item">
+            <a href="http://bit.ly/2Nd05lW" target="_blank" class="common-list-button is-ads">
+              <div class="image"><img src="https://cssclasscom.files.wordpress.com/2020/06/14.png?w=300" width="115"
+                  alt=""></div>
+              <div class="text">
+                <h4 class="ads-title"> No Notification Yet! </h4>
+                <p class="ads-url">BrandBros.com</p>
+              </div>
+            </a>
+          </li>
+        </ul>
+        <button class="common-more">
+          <span class="text">See More</span>
+          <span class="icon">🔻</span>
+        </button>
+      </section>
+    </aside>
+  </div>
+  <!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
+  <script src="script.js"></script>
+
+</body>
+
+</html>
